@@ -1,0 +1,83 @@
+.Header {
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.7rem 3rem;
+    margin-bottom: 2rem;
+    display: grid;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    grid-template-columns: repeat(12, 1fr);
+    z-index: 9999;
+  }
+  &.hidden {
+    opacity: 1;
+  }
+
+  &__left {
+    grid-column: 9 span;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+
+    @media screen and (max-width: 950px) {
+      grid-column: 6 span;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-logo {
+      grid-column: 3 span;
+      width: 13rem;
+      margin-bottom: 0.8rem;
+
+      img {
+        width: 100%;
+        filter: invert(1);
+      }
+    }
+    &-nav {
+      grid-column: 9 span;
+
+      @media screen and (max-width: 950px) {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    grid-column: 3 span;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+
+    @media screen and (max-width: 950px) {
+      grid-column: 6 span;
+      margin-right: 4rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .shop {
+      span {
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'D-DIN';
+      }
+    }
+    &-openSideBar {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

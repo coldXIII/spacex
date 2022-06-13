@@ -1,0 +1,44 @@
+.Intro {
+  height: 100vh;
+  position: relative;
+  margin-bottom: -0.5rem;
+  @media screen and (max-width: 600px) {
+    height: 50vh;
+  }
+
+  &-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    h1 {
+      font-size: 5em;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 800px) {
+        font-size: 3.5em;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 3em;
+        white-space: nowrap;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 2em;
+      }
+    }
+    h3 {
+      font-size: 1.1em;
+      font-weight: 300;
+      text-transform: uppercase;
+      @media screen and (max-width: 800px) {
+        font-size: 0.9em;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
