@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from '../Tabs/Tabs';
+import Tabs from '../../containers/Tabs/Tabs';
 import ParallaxSlide from '../ParallaxSlide/ParallaxSlide';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Navigation } from 'swiper';
@@ -7,6 +7,7 @@ import './InfoSlider.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Title from '../Title/Title';
 
 const InfoSlider = (props) => {
   return (
@@ -24,6 +25,7 @@ const InfoSlider = (props) => {
       <SwiperSlide>
         <ParallaxSlide data={props.parallaxslide} />
       </SwiperSlide>
+
       <SwiperSlide>
         <Tabs
           data={props.tabsslide}
@@ -31,6 +33,7 @@ const InfoSlider = (props) => {
           subtitle={props.subtitle}
         />
       </SwiperSlide>
+
       {React.Children.toArray(
         props.slides.map((slide, index) => {
           return (
@@ -45,14 +48,13 @@ const InfoSlider = (props) => {
               }}
             >
               <div className="InfoSlider__slide-info">
-                <h2>{slide.subtitle}</h2>
-                <h1>{slide.title}</h1>
-                <p>{slide.text}</p>
-                <ul>
+                <Title title={slide.title} subtitle={slide.subtitle} />
+                <p style={{marginTop:'3rem'}}>{slide.text}</p>
+                <ul className='ul'>
                   {React.Children.toArray(
                     slide.info.map((item, index) => {
                       return (
-                        <li key={index}>
+                        <li className='li' key={index}>
                           <span>{item.characteristic}</span>
                           <span>{item.value}</span>
                         </li>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from '../components/Intro/Intro';
-import Tabs from '../components/Tabs/Tabs';
+import Tabs from '../containers/Tabs/Tabs';
 import background from '../assets/rideshare/background.webp';
 import Advantages from '../components/Advantages/Advantages';
 import Pricing from '../components/Pricing/Pricing';

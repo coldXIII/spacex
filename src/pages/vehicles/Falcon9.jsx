@@ -3,7 +3,7 @@ import Intro from '../../components/Intro/Intro';
 import Counter from '../../components/Counter/Counter';
 import InfoSlider from '../../components/InfoSlider/InfoSlider';
 import Video from '../../components/Video/Video';
-import Tabs from '../../components/Tabs/Tabs';
+import Tabs from '../../containers/Tabs/Tabs';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Outro from '../../components/Outro/Outro';
 import tabsection from '../../store/falcon9/tabsection';

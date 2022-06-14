@@ -1,6 +1,7 @@
 import React from 'react';
 import './Explore.scss';
 import Button from '../Button/Button';
+import Title from '../Title/Title';
 
 const Planet = (props) => {
   return (
@@ -13,8 +14,7 @@ const Planet = (props) => {
         data-aos="fade-up"
         data-aos-once="true"
       >
-        <h3>mission</h3>
-        <h1>{props.title}</h1>
+        <Title title={props.title} subtitle={'mission'} />
         <p>{props.text}</p>
         <Button
           title={'explore'}

@@ -4,7 +4,7 @@ import Counter from '../../components/Counter/Counter';
 import InfoSlider from '../../components/InfoSlider/InfoSlider';
 import Video from '../../components/Video/Video';
 import Inspace from '../../components/Inspace/Inspace';
-import Tabs from '../../components/Tabs/Tabs';
+import Tabs from '../../containers/Tabs/Tabs';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import background from '../../assets/dragon/background.webp';
 import counter from '../../store/dragon/counter.js';

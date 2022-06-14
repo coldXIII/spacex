@@ -3,34 +3,32 @@ import './Footer.scss';
 
 function Footer() {
   return (
-
-      <ul className="Footer">
-        <li>
-          <a href="https://www.spacex.com/">SpaceX &copy; 2022</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">Youtube</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">Instagram</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">Flickr</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">Linkedin</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">privacy policy</a>
-        </li>
-        <li>
-          <a href="https://www.spacex.com/">suppliers</a>
-        </li>
-      </ul>
-
+    <ul className="Footer">
+      <li>
+        <span>SpaceX &copy; 2022</span>
+      </li>
+      <li>
+        <span>Twitter</span>
+      </li>
+      <li>
+        <span>Youtube</span>
+      </li>
+      <li>
+        <span>Instagram</span>
+      </li>
+      <li>
+        <span>Flickr</span>
+      </li>
+      <li>
+        <span>Linkedin</span>
+      </li>
+      <li>
+        <span>privacy policy</span>
+      </li>
+      <li>
+        <span>suppliers</span>
+      </li>
+    </ul>
   );
 }
 

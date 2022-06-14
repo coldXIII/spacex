@@ -30,6 +30,11 @@ function Header() {
     }
   }, [lastScrollY]);
 
+
+
+
+
+
   return (
     <header className={`Header active ${show && 'hidden'}`}>
       <div className="Header__left">
@@ -48,16 +53,18 @@ function Header() {
             <span>shop</span>
           </li>
           <li>
-            <div
-              className="Header__right-openSideBar"
-              onClick={() => setSidebarActive(true)}
-            >
-              <i className="fa-solid fa-bars"></i>
+            <div className="Header__right-openSideBar" onClick={()=> setSidebarActive(true)}>
+              <i
+                className={
+                  sidebarActive ? 'fa-solid fa-times' : 'fa-solid fa-bars'
+                }
+              ></i>
             </div>
           </li>
         </ul>
-        <SideBar active={sidebarActive} setActive={setSidebarActive} />
+
       </div>
+      <SideBar active={sidebarActive} setActive={setSidebarActive}  />
     </header>
   );
 }

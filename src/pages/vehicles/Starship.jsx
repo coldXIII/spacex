@@ -10,7 +10,7 @@ import Satellites from '../../components/Satellites/Satellites';
 import satellites from '../../store/starship/satellites';
 import Landing from '../../components/Landing/Landing';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
-import Tabs from '../../components/Tabs/Tabs';
+import Tabs from '../../containers/Tabs/Tabs';
 
 
 import tabsection from '../../store/starship/tabsection';

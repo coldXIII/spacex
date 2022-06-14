@@ -49,15 +49,15 @@
   }
 
   &__right {
+    position: relative;
     grid-column: 3 span;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 0.8em;
 
     @media screen and (max-width: 950px) {
       grid-column: 6 span;
-      margin-right: 4rem;
     }
 
     ul {
@@ -68,6 +68,10 @@
     }
     .shop {
       span {
+        // position: absolute;
+        // top: 50%;
+        // right: 30%;
+        // transform: translate(-30%, -50%);
         color: #fff;
         font-size: 1.1em;
         font-weight: 600;
@@ -76,6 +80,10 @@
       }
     }
     &-openSideBar {
+      // position: absolute;
+      // top: 50%;
+      // right: 10%;
+      // transform: translate(-10%, -50%);
       font-size: 1.5rem;
       cursor: pointer;
     }

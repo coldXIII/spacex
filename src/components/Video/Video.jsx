@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
+import Title from '../Title/Title';
 import './Video.scss';
 
 const Video = (props) => {
@@ -7,13 +8,9 @@ const Video = (props) => {
   return (
     <section className="Video">
       <div className="Video__title">
-        <h3 data-aos="fade-up" data-aos-offset="0" data-aos-once="true">
-         video
-        </h3>
-        <h1 data-aos="fade-up" data-aos-offset="0" data-aos-once="true">
-        {props.title}
-        </h1>
+        <Title title={props.title} subtitle={'video'} />
       </div>
+
       <div className="Video__box">
         <picture>
           <source

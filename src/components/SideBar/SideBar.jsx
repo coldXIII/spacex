@@ -55,7 +55,6 @@ const SideBar = ({ active, setActive }) => {
           );
         })}
       </ul>
-
       <div className="SideBar__close" onClick={() => setActive(false)}>
         <i className="fa-solid fa-xmark"></i>
       </div>

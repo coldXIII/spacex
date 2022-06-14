@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import Title from '../Title/Title';
 import './HomeSection.scss';
 
 function HomeSection({ sections }) {
@@ -16,30 +17,13 @@ function HomeSection({ sections }) {
         }}
       >
         <div className="HomeSection__info">
-          <h3
-            data-aos="fade-up"
-            data-aos-offset="0"
-            data-aos-once="true"
-            data-aos-delay="15"
-            className="HomeSection__info-subtitle"
-          >
-            {section.subtitle}
-          </h3>
-          <h1
-            data-aos="fade-up"
-            data-aos-offset="0"
-            data-aos-once="true"
-            data-aos-delay="30"
-            className="HomeSection__info-title"
-          >
-            {section.title}
-          </h1>
+          <Title title={section.title} subtitle={section.subtitle} />
           <div
             className="button"
             data-aos="fade-up"
             data-aos-offset="0"
             data-aos-once="true"
-            data-aos-delay="35"
+            data-aos-delay="25"
           >
             <Button title={section.button} />
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Modal.scss';
 
 const Modal = ({ active, setActive, videoSrc }) => {
@@ -22,6 +23,18 @@ const Modal = ({ active, setActive, videoSrc }) => {
       </div>
     </div>
   );
+};
+
+Modal.propTypes = {
+  active: PropTypes.bool,
+  setActive: PropTypes.func,
+  videoSrc: PropTypes.string,
+};
+
+Modal.defaultProps = {
+  active: false,
+  setActive: () => {},
+  videoSrc: '',
 };
 
 export default Modal;

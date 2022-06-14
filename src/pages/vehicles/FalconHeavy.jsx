@@ -4,7 +4,7 @@ import Counter from '../../components/Counter/Counter';
 import InfoSlider from '../../components/InfoSlider/InfoSlider';
 import Video from '../../components/Video/Video';
 import Performance from '../../components/Performance/Performance';
-import Tabs from '../../components/Tabs/Tabs';
+import Tabs from '../../containers/Tabs/Tabs';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import Outro from '../../components/Outro/Outro';
 import parallaxslide from '../../store/falcon-heavy/parallaxslide.js';
