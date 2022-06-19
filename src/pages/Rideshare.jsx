@@ -19,7 +19,11 @@ const Rideshare = () => {
       />
       <Advantages />
       <Pricing />
-      <Tabs data={tabsection} title={'payload configurations'} style={{ direction:'rtl'}} />
+      <Tabs
+        data={tabsection}
+        title={'payload configurations'}
+        style={{ width:'50%', right:'0' }}
+      />
     </div>
   );
 };

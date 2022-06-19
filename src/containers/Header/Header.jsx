@@ -6,10 +6,14 @@ import SideBar from '../../components/SideBar/SideBar';
 import logo from '../../assets/logo.png';
 import './Header.scss';
 
-function Header() {
+const Header = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [sidebarActive, setSidebarActive] = useState(false);
+
+  const toggleSideBar = () => {
+    setSidebarActive(!sidebarActive);
+  };
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
@@ -30,11 +34,6 @@ function Header() {
     }
   }, [lastScrollY]);
 
-
-
-
-
-
   return (
     <header className={`Header active ${show && 'hidden'}`}>
       <div className="Header__left">
@@ -50,10 +49,20 @@ function Header() {
       <div className="Header__right">
         <ul>
           <li className="shop">
-            <span>shop</span>
+            <a
+              target="_blank"
+              href="https://spacex-shop.vercel.app/"
+              rel="noreferrer"
+            >
+              shop
+            </a>
           </li>
           <li>
-            <div className="Header__right-openSideBar" onClick={()=> setSidebarActive(true)}>
+            <div
+              className="Header__right-openSideBar"
+              onClick={() => toggleSideBar()}
+              style={{ zIndex: '99999' }}
+            >
               <i
                 className={
                   sidebarActive ? 'fa-solid fa-times' : 'fa-solid fa-bars'
@@ -62,11 +71,10 @@ function Header() {
             </div>
           </li>
         </ul>
-
       </div>
-      <SideBar active={sidebarActive} setActive={setSidebarActive}  />
+      <SideBar active={sidebarActive} setActive={setSidebarActive} />
     </header>
   );
-}
+};
 
 export default Header;

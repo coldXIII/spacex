@@ -49,15 +49,12 @@ const SideBar = ({ active, setActive }) => {
       <ul className="SideBar__mobilemenu">
         {mobileLinks.map((link, index) => {
           return (
-            <Link to={link.to} className="SideBar__menu-item" key={index}>
+            <Link to={link.to} className="SideBar__menu-item" key={index} data-aos="fade-right">
               {link.name}
             </Link>
           );
         })}
       </ul>
-      <div className="SideBar__close" onClick={() => setActive(false)}>
-        <i className="fa-solid fa-xmark"></i>
-      </div>
     </div>
   );
 };

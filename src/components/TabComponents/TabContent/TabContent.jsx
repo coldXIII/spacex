@@ -12,12 +12,13 @@ const TabContent = ({ data, toggleState }) => {
             className={
               toggleState === index ? 'content active-content' : 'content'
             }
+          
           >
             <p data-aos="fade-up" data-aos-once="true">
               {item.text}
             </p>
             <ul className="ul" data-aos="fade-up" data-aos-once="true">
-              {item.info.map((item, index) => {
+              {item.info?.map((item, index) => {
                 return (
                   <li className="li" key={`${index} + ${item.value}`}>
                     <span>{item.characteristic}</span>

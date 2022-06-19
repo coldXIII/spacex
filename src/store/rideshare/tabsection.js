@@ -1,4 +1,4 @@
-import payload from '../../assets/rideshare/payload.png'
+import payload from '../../assets/rideshare/payload.webp'
 
 
 const tabsection = [

@@ -67,11 +67,7 @@
       gap: 1rem;
     }
     .shop {
-      span {
-        // position: absolute;
-        // top: 50%;
-        // right: 30%;
-        // transform: translate(-30%, -50%);
+      a {
         color: #fff;
         font-size: 1.1em;
         font-weight: 600;
@@ -80,10 +76,6 @@
       }
     }
     &-openSideBar {
-      // position: absolute;
-      // top: 50%;
-      // right: 10%;
-      // transform: translate(-10%, -50%);
       font-size: 1.5rem;
       cursor: pointer;
     }

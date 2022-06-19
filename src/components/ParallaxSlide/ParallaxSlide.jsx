@@ -5,7 +5,11 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 const ParallaxSlide = ({ data }) => {
   return (
     <div className="Parallax__slide">
-      <Parallax pages={1.6} style={{ top: '0', left: '0' }}>
+      <Parallax
+        pages={1.6}
+        style={{ top: '0', left: '0',scrollbarWidth: 'none' }}
+   
+      >
         <ParallaxLayer offset={0} speed={2.5} sticky={{ start: 0, end: 0.3 }}>
           {React.Children.toArray(
             data.map((slide, index) => {

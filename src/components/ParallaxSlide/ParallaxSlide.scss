@@ -1,18 +1,18 @@
 .Parallax__slide {
   height: 100vh;
-
+  scrollbar-width: none;
 
   &-inner {
     position: relative;
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    
+    scrollbar-width: none;
   }
 
   &-info {
     position: absolute;
-    top:30%;
+    top: 30%;
     left: 0;
     transform: translateY(-30%);
     padding: 1rem;
@@ -22,7 +22,7 @@
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
-    @media screen and (max-width:650px) {
+    @media screen and (max-width: 650px) {
       width: 100%;
     }
 
@@ -53,7 +53,7 @@
     ul {
       width: 90%;
       margin: 0 auto;
-      @media screen and (max-width:650px) {
+      @media screen and (max-width: 650px) {
         width: 80%;
       }
       li {

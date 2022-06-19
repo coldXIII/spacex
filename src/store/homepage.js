@@ -4,8 +4,22 @@ import bg3 from '../assets/homepage/bg3.webp';
 import bg4 from '../assets/homepage/bg4.webp';
 import bg5 from '../assets/homepage/bg5.webp';
 import bg6 from '../assets/homepage/bg6.webp';
+import bg7 from '../assets/homepage/bg7.webp';
+import bg8 from '../assets/homepage/bg8.webp';
 
 const sections = [
+  {
+    title: 'Globalstar FM15 Mission',
+    subtitle: 'recent launch',
+    button: 'rewatch',
+    background: bg8,
+  },
+  {
+    title: 'SARah-1 Mission',
+    subtitle: 'recent launch',
+    button: 'rewatch',
+    background: bg7,
+  },
   {
     title: 'Nilesat 301 Mission',
     subtitle: 'recent launch',

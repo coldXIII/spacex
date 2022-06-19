@@ -6,7 +6,7 @@ import './Tabs.scss';
 
 
 
-const Tabs = ({data,title,subtitle}) => {
+const Tabs = ({data,title,subtitle,style}) => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
@@ -27,7 +27,7 @@ const Tabs = ({data,title,subtitle}) => {
         })}
       </div>
 
-      <div className="Tabs__container-info">
+      <div className="Tabs__container-info" style={style}>
         <Title title={title} subtitle={subtitle} />
         <TabNav
           data={data}
@@ -35,7 +35,7 @@ const Tabs = ({data,title,subtitle}) => {
           toggleState={toggleState}
           className="Tabs__container-info--buttons"
         />
-        <TabContent data={data} toggleState={toggleState} />
+        <TabContent data={data} toggleState={toggleState}  />
       </div>
     </div>
   );

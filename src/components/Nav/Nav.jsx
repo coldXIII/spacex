@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.scss';
 
-function Nav({ logedIn }) {
+const Nav = ({ logedIn }) => {
   return (
     <ul className="Nav">
       <li>

@@ -21,7 +21,7 @@
     }
 
     .image {
-      width: 110%;
+      width: 100%;
       position: relative;
       display: none;
 
@@ -34,8 +34,8 @@
   &-info {
     position: absolute;
     padding: 2rem;
+    width: 50%;
     z-index: 99;
-
 
     &--title {
       text-align: left;
@@ -43,6 +43,7 @@
         font-size: 2.9em;
         font-weight: 600;
         text-transform: uppercase;
+        white-space: wrap;
         @media screen and (max-width: 850px) {
           font-size: 2em;
         }
