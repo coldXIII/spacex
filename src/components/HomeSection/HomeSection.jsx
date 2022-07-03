@@ -23,7 +23,6 @@ function HomeSection({ sections }) {
             data-aos="fade-up"
             data-aos-offset="0"
             data-aos-once="true"
-            data-aos-delay="25"
           >
             <Button title={section.button} />
           </div>

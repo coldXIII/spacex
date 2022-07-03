@@ -1,8 +1,6 @@
 import React from 'react';
-import Intro from '../components/Intro/Intro';
+import { Intro, Explore, Outro } from '../components';
 import background from '../assets/human-spaceflight/background.webp';
-import Explore from '../components/Explore/Explore';
-import Outro from '../components/Outro/Outro';
 import earth from '../assets/explore/earth.png';
 import iss from '../assets/explore/iss.png';
 import moon from '../assets/explore/moon.png';
@@ -36,7 +34,7 @@ const HumanSpaceflight = () => {
         title={'mars & beyond'}
         text={'THE ROAD TO MAKING HUMANITY MULTIPLANETARY'}
       />
-      <Outro/>
+      <Outro />
     </div>
   );
 };

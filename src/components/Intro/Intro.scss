@@ -2,9 +2,6 @@
   height: 100vh;
   position: relative;
   margin-bottom: -0.5rem;
-  @media screen and (max-width: 600px) {
-    height: 50vh;
-  }
 
   &-title {
     position: absolute;
@@ -18,14 +15,7 @@
       text-transform: uppercase;
 
       @media screen and (max-width: 800px) {
-        font-size: 3.5em;
-      }
-      @media screen and (max-width: 600px) {
-        font-size: 3em;
-        white-space: nowrap;
-      }
-      @media screen and (max-width: 400px) {
-        font-size: 2em;
+        font-size: 4em;
       }
     }
     h3 {
@@ -34,10 +24,6 @@
       text-transform: uppercase;
       @media screen and (max-width: 800px) {
         font-size: 0.9em;
-      }
-
-      @media screen and (max-width: 400px) {
-        font-size: 0.8em;
       }
     }
   }

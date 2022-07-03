@@ -1,4 +1,5 @@
 import React from 'react';
+import Title from '../Title/Title';
 import Tabs from '../../containers/Tabs/Tabs';
 import ParallaxSlide from '../ParallaxSlide/ParallaxSlide';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +8,6 @@ import './InfoSlider.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Title from '../Title/Title';
 
 const InfoSlider = (props) => {
   return (
@@ -34,39 +34,35 @@ const InfoSlider = (props) => {
         />
       </SwiperSlide>
 
-      {React.Children.toArray(
-        props.slides.map((slide, index) => {
-          return (
-            <SwiperSlide
-              key={index}
-              className="InfoSlider__slide"
-              style={{
-                background: `url(${slide.img})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              <div className="InfoSlider__slide-info">
-                <Title title={slide.title} subtitle={slide.subtitle} />
-                <p style={{marginTop:'3rem'}}>{slide.text}</p>
-                <ul className='ul'>
-                  {React.Children.toArray(
-                    slide.info.map((item, index) => {
-                      return (
-                        <li className='li' key={index}>
-                          <span>{item.characteristic}</span>
-                          <span>{item.value}</span>
-                        </li>
-                      );
-                    })
-                  )}
-                </ul>
-              </div>
-            </SwiperSlide>
-          );
-        })
-      )}
+      {props.slides.map((slide, index) => {
+        return (
+          <SwiperSlide
+            key={index + slide.title}
+            className="InfoSlider__slide"
+            style={{
+              background: `url(${slide.img})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div className="InfoSlider__slide-info">
+              <Title title={slide.title} subtitle={slide.subtitle} />
+              <p style={{ marginTop: '3rem' }}>{slide.text}</p>
+              <ul className="ul">
+                {slide.info?.map((item, index) => {
+                  return (
+                    <li className="li" key={index + item.value}>
+                      <span>{item.characteristic}</span>
+                      <span>{item.value}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </SwiperSlide>
+        );
+      })}
 
       <div className="prev">
         <i className="fa-solid fa-chevron-left"></i>

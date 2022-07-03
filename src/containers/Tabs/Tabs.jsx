@@ -4,14 +4,11 @@ import TabNav from '../../components/TabComponents/TabNav/TabNav';
 import Title from '../../components/Title/Title';
 import './Tabs.scss';
 
-
-
 const Tabs = ({data,title,subtitle,style}) => {
   const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
   };
-
   return (
     <div className="Tabs__container">
       <div className="Tabs__container-bg">

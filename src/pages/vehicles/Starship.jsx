@@ -1,20 +1,22 @@
 import React from 'react';
-import Intro from '../../components/Intro/Intro';
-import InfoSlider from '../../components/InfoSlider/InfoSlider';
-import Video from '../../components/Video/Video';
+import {
+  Intro,
+  InfoSlider,
+  Video,
+  Tabs,
+  ImageSlider,
+  Satellites,
+  Landing,
+} from '../../components';
+import {
+  parallaxslide,
+  slides,
+  tabsslide,
+  satellites,
+  imageslider,
+  tabsection,
+} from '../../store/starship';
 import background from '../../assets/starship/background.webp';
-import parallaxslide from '../../store/starship/parallaxslide.js';
-import slides from '../../store/starship/slides.js';
-import tabsslide from '../../store/starship/tabs.js';
-import Satellites from '../../components/Satellites/Satellites';
-import satellites from '../../store/starship/satellites';
-import Landing from '../../components/Landing/Landing';
-import ImageSlider from '../../components/ImageSlider/ImageSlider';
-import Tabs from '../../containers/Tabs/Tabs';
-
-
-import tabsection from '../../store/starship/tabsection';
-import imageslider from '../../store/starship/imgslider.js';
 
 const jpgSrc = 'https://img.youtube.com/vi/sOpMrVnjYeY/maxresdefault.jpg';
 const webpSrc =
@@ -44,12 +46,8 @@ const Starship = () => {
       />
       <Satellites satellites={satellites} />
       <Landing />
-      <Tabs
-        data={tabsection}
-        title={'raptor'}
-        subtitle={'engines'}
-      />
-            <ImageSlider imageslider={imageslider} />
+      <Tabs data={tabsection} title={'raptor'} subtitle={'engines'} />
+      <ImageSlider imageslider={imageslider} />
     </div>
   );
 };

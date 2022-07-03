@@ -29,11 +29,18 @@
         font-size: 3rem;
         font-weight: 600;
         text-transform: uppercase;
+        @media screen and (max-width: 450px) {
+          font-size: 2rem;
+        }
     }
     p{
         font-size: 1rem;
         font-weight: 300;
         line-height: 2rem;
+        @media screen and (max-width: 450px) {
+          font-size: 0.9rem;
+        }
+        
     }
   }
 }

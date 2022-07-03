@@ -1,9 +1,6 @@
 import React from 'react';
-import Intro from '../components/Intro/Intro';
-import Tabs from '../containers/Tabs/Tabs';
+import { Intro, Tabs, Advantages, Pricing } from '../components';
 import background from '../assets/rideshare/background.webp';
-import Advantages from '../components/Advantages/Advantages';
-import Pricing from '../components/Pricing/Pricing';
 import tabsection from '../store/rideshare/tabsection';
 
 const Rideshare = () => {
@@ -22,7 +19,7 @@ const Rideshare = () => {
       <Tabs
         data={tabsection}
         title={'payload configurations'}
-        style={{ width:'50%', right:'0' }}
+        style={{ right: '0' }}
       />
     </div>
   );

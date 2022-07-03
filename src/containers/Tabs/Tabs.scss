@@ -1,11 +1,9 @@
 .Tabs__container {
   position: relative;
   height: 100vh;
-  @media screen and (max-width:1100px) {
+ 
+ @media screen and (max-width:1100px) {
     height: 80vh;
-  }
-  @media screen and (max-width:450px) {
-    height: 60vh;
   }
 
   &-bg {
@@ -16,14 +14,13 @@
     height: 100%;
     z-index: 9;
 
-    @media screen and (max-width: 850px) {
-      grid-column: 12 span;
-    }
-
     .image {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       position: relative;
       display: none;
+
 
       &.active-image {
         display: block;
@@ -36,6 +33,9 @@
     padding: 2rem;
     width: 50%;
     z-index: 99;
+    @media screen and (max-width: 850px) {
+     width: 100%;
+    }
 
     &--title {
       text-align: left;

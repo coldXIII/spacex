@@ -1,19 +1,22 @@
 import React from 'react';
-import Intro from '../../components/Intro/Intro';
-import Counter from '../../components/Counter/Counter';
-import InfoSlider from '../../components/InfoSlider/InfoSlider';
-import Video from '../../components/Video/Video';
-import Inspace from '../../components/Inspace/Inspace';
-import Tabs from '../../containers/Tabs/Tabs';
-import ImageSlider from '../../components/ImageSlider/ImageSlider';
+import {
+  Intro,
+  Counter,
+  InfoSlider,
+  Video,
+  Tabs,
+  Inspace,
+  ImageSlider
+} from '../../components';
+import {
+  tabsection,
+  parallaxslide,
+  slides,
+  tabsslide,
+  counter,
+  imageslider,
+} from '../../store/dragon';
 import background from '../../assets/dragon/background.webp';
-import counter from '../../store/dragon/counter.js';
-import parallaxslide from '../../store/dragon/parallaxslide.js';
-import slides from '../../store/dragon/slides.js';
-import tabsslide from '../../store/dragon/tabs.js';
-import tabsection from '../../store/dragon/tabsection';
-import imageslider from '../../store/dragon/imgslider.js';
-
 
 const jpgSrc = 'https://img.youtube.com/vi/78ATfCaBn6E/maxresdefault.jpg';
 const webpSrc =
@@ -23,7 +26,7 @@ const videoSrc = 'https://www.youtube.com/embed/78ATfCaBn6E';
 const Dragon = () => {
   return (
     <div className="Dragon Page">
-       <Intro
+      <Intro
         background={background}
         title={'dragon'}
         subtitle={'   Sending humans and cargo into space'}
@@ -36,7 +39,6 @@ const Dragon = () => {
         title={'first stage'}
         subtitle={'dragon'}
       />
-
       <Video
         imgSrc={jpgSrc}
         webpSrc={webpSrc}

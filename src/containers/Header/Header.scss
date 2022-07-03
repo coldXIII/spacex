@@ -1,4 +1,5 @@
 .Header {
+  width: 100vw;
   &.active {
     position: fixed;
     top: 0;
@@ -6,33 +7,42 @@
     width: 100%;
     padding: 1.7rem 3rem;
     margin-bottom: 2rem;
-    display: grid;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    grid-template-columns: repeat(12, 1fr);
     z-index: 9999;
+    @media screen and (max-width: 950px) {
+     justify-content: space-between;
+    }
+    @media screen and (max-width: 350px) {
+     justify-content: flex-start;
+
+    }
   }
   &.hidden {
     opacity: 1;
   }
 
   &__left {
-    grid-column: 9 span;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 950px) {
-      grid-column: 6 span;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     &-logo {
-      grid-column: 3 span;
       width: 13rem;
       margin-bottom: 0.8rem;
+      @media screen and (max-width: 950px) {
+      width: 8rem;
+      }
 
       img {
         width: 100%;
@@ -49,8 +59,8 @@
   }
 
   &__right {
+    width: 40vw;
     position: relative;
-    grid-column: 3 span;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -76,7 +86,7 @@
       }
     }
     &-openSideBar {
-      font-size: 1.5rem;
+      font-size: 1.2em;
       cursor: pointer;
     }
   }

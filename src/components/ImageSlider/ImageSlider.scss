@@ -9,7 +9,7 @@
   @media screen and(max-width:650px) {
     height: 60vh;
   }
-  @media screen and(max-width:380px) {
+  @media screen and(max-width:400px) {
     height: 40vh;
   }
 
@@ -20,7 +20,7 @@
     @media screen and(max-width:650px) {
       height: 50vh;
     }
-    @media screen and(max-width:380px) {
+    @media screen and(max-width:400px) {
       height: 30vh;
     }
     .image {
@@ -43,8 +43,10 @@
       @media screen and(max-width:650px) {
         bottom: -20%;
       }
-      @media screen and(max-width:380px) {
-        bottom: -50%;
+      @media screen and(max-width:400px) {
+        bottom: -30%;
+        text-shadow: 0 0 2px #000;
+        text-align: center;
       }
     }
   }
@@ -90,6 +92,7 @@
     z-index: 9999;
     @media screen and(max-width:380px) {
       top: 80%;
+      left: 80%;
     }
     i {
       font-size: 1.8rem;

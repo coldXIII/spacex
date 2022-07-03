@@ -3,7 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+  @media screen and (max-width: 450px) {
+    height: 70vh;
+  }
 
   &__slide {
     height: 100vh;
@@ -12,6 +15,9 @@
     gap: 1rem;
     padding: 1rem 0;
     align-items: center;
+    @media screen and (max-width: 450px) {
+      height: 60vh;
+    }
 
     &-image {
       position: relative;
@@ -19,8 +25,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-  
 
       img {
         position: relative;
@@ -40,32 +44,49 @@
       align-items: flex-start;
       flex-direction: column;
       text-align: left;
+      padding: 1rem;
 
       @media screen and (max-width: 650px) {
         grid-column: 12 span;
       }
       h1 {
         margin: 0;
-        margin-left: 7%;
         margin-bottom: 2rem;
         font-size: 2.9em;
         font-weight: 600;
         text-transform: uppercase;
+        @media screen and (max-width: 650px) {
+          font-size: 2em;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.5em;
+        }
       }
       h2 {
         margin: 0;
         margin-bottom: 0.5rem;
-        margin-left: 7%;
         font-size: 1.3em;
         font-weight: 400;
         text-transform: uppercase;
+
+        @media screen and (max-width: 650px) {
+          font-size: 1em;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.9em;
+        }
       }
       p {
         margin: 0 auto;
-        margin-left: 7%;
         font-size: 1em;
         font-weight: 300;
         line-height: 2em;
+        @media screen and (max-width: 650px) {
+          font-size: 0.9em;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.8em;
+        }
       }
 
       ul {

@@ -26,10 +26,12 @@ const Nav = ({ logedIn }) => {
         </NavLink>
       </li>
       <li>
-        <span>starlinks</span>
+        <span>
+          <a href="https://starlink-blond.vercel.app/" rel="noreferrer" target="_blank" >starlink</a>
+        </span>
       </li>
     </ul>
   );
-}
+};
 
 export default Nav;
