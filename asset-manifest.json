@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/spacex/static/css/main.1b35eee2.css",
-    "main.js": "/spacex/static/js/main.b0da5a07.js",
+    "main.css": "/spacex/static/css/main.ac9b955f.css",
+    "main.js": "/spacex/static/js/main.bf4e0796.js",
     "static/js/787.c30a6e17.chunk.js": "/spacex/static/js/787.c30a6e17.chunk.js",
     "static/media/satellite2.gif": "/spacex/static/media/satellite2.20010fbff7936aac925a.gif",
     "static/media/satellite1.gif": "/spacex/static/media/satellite1.7013b083c4794e19f65e.gif",
     "static/media/satellite4.gif": "/spacex/static/media/satellite4.6620a2eb1118dcc4e35b.gif",
     "static/media/satellite3.gif": "/spacex/static/media/satellite3.9b19c593e0acae301db3.gif",
-    "static/media/iss.png": "/spacex/static/media/iss.7ab7caf713d96b1c5be9.png",
-    "static/media/background.webp": "/spacex/static/media/background.b170db09361a08d69f00.webp",
-    "static/media/mars.png": "/spacex/static/media/mars.e22f438c7dc6298630c2.png",
-    "static/media/moon.png": "/spacex/static/media/moon.713e4daa1b2a44926038.png",
+    "static/media/background.webp": "/spacex/static/media/background.75b83553ee645e8d2316.webp",
+    "static/media/moon.png": "/spacex/static/media/moon.ed8578c5c249793ada2d.png",
     "static/media/pricing.webp": "/spacex/static/media/pricing.ee8aada8e234ae2780cc.webp",
-    "static/media/earth.png": "/spacex/static/media/earth.e76bf32325da77074151.png",
+    "static/media/mars.png": "/spacex/static/media/mars.85733267e70cd477567e.png",
+    "static/media/iss.png": "/spacex/static/media/iss.62861819644f36bdb30a.png",
     "static/media/mars_landing.webp": "/spacex/static/media/mars_landing.4bf2c0d76c14fbff9622.webp",
     "static/media/auth_bg.webp": "/spacex/static/media/auth_bg.36327497764dc33cf2e3.webp",
     "static/media/SuperDraco.webp": "/spacex/static/media/SuperDraco.80ea7ea6ceb865c58605.webp",
@@ -45,6 +44,7 @@
     "static/media/starship_scheme.webp": "/spacex/static/media/starship_scheme.0f62ba1927347dcf2d5e.webp",
     "static/media/bg7.webp": "/spacex/static/media/bg7.acd50e746fc6b31c78ea.webp",
     "static/media/bg5.webp": "/spacex/static/media/bg5.f672d033c31ed433814c.webp",
+    "static/media/earth.png": "/spacex/static/media/earth.ff0553f67ddc60ad00f7.png",
     "static/media/bg1.webp": "/spacex/static/media/bg1.3a08d0fc647eec380bc4.webp",
     "static/media/bg8.webp": "/spacex/static/media/bg8.0b5fe792419a9e94ac81.webp",
     "static/media/bg2.webp": "/spacex/static/media/bg2.582beb510d74bdb54ddf.webp",
@@ -55,12 +55,12 @@
     "static/media/D-DIN-Bold.woff2": "/spacex/static/media/D-DIN-Bold.36a3a69dafd52d9361da.woff2",
     "static/media/D-DIN.woff2": "/spacex/static/media/D-DIN.297767cdd92ead4be99d.woff2",
     "index.html": "/spacex/index.html",
-    "main.1b35eee2.css.map": "/spacex/static/css/main.1b35eee2.css.map",
-    "main.b0da5a07.js.map": "/spacex/static/js/main.b0da5a07.js.map",
+    "main.ac9b955f.css.map": "/spacex/static/css/main.ac9b955f.css.map",
+    "main.bf4e0796.js.map": "/spacex/static/js/main.bf4e0796.js.map",
     "787.c30a6e17.chunk.js.map": "/spacex/static/js/787.c30a6e17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b35eee2.css",
-    "static/js/main.b0da5a07.js"
+    "static/css/main.ac9b955f.css",
+    "static/js/main.bf4e0796.js"
   ]
 }
